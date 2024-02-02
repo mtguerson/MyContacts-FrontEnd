@@ -19,6 +19,8 @@
     "linebreak-style": "off",
     "import/prefer-default-export": "off",
     "no-trailing-spaces": "off",
-    "react/jsx-no-bind": "off"
+    "react/jsx-no-bind": "off",
+    "no-promise-executor-return": "off",
+    "class-methods-use-this": "off"
   }
 }
