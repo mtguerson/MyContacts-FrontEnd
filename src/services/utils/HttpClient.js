@@ -10,7 +10,11 @@ class HttpClient {
 
     await delay(500);
 
-    return response.json();
+    if (response.ok) {
+      return response.json();
+    }
+
+    throw new Error(`${response.status} - ${response.statusText}`);
   }
 }
 
