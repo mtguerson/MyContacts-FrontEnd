@@ -30,13 +30,13 @@ export default function Home() {
 
         const contactsList = await ContactsService.listContacts(orderBy);
 
-        if (contactsList) {
-          setContacts(contactsList);
-        } else {
-          console.log('Erro na API!');
-        }
+        setContacts(contactsList);
       } catch (error) {
-        console.log('Caiu no catch', error);
+        console.log('Name:', error.name);
+        console.log('Message:', error.message);
+        console.log('Response:', error.response);
+        console.log('Body:', error.body);
+        console.log(error);
       } finally {
         setIsLoading(false);
       }
