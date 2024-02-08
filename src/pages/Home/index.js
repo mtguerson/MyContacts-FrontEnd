@@ -135,7 +135,7 @@ export default function Home() {
             </EmptyListContainer>
           )}
 
-          {(contacts.length < 0 && filteredContacts < 1) && (
+          {(contacts.length > 0 && filteredContacts < 1) && (
             <SearchNotFoundContainer>
               <img src={magnifierQuestion} alt="Magnifier Question" />
 
