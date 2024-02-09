@@ -27,7 +27,7 @@ export const InputSearchContainer = styled.div`
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  justify-content: ${({ justifyContent }) => justifyContent};
+  justify-content: ${({ $justifyContent }) => $justifyContent};
   margin-top: 32px;
   border-bottom: 2px solid ${({ theme }) => theme.colors.gray[100]};
   padding-bottom: 16px;
@@ -70,7 +70,7 @@ export const ListHeader = styled.header`
   }
 
   img {
-    transform: ${({ orderBy }) => (orderBy === 'asc' ? 'rotate(180deg)' : 'rotate(0eg)')};
+    transform: ${({ $orderBy }) => ($orderBy === 'asc' ? 'rotate(180deg)' : 'rotate(0eg)')};
     transition: transform 0.2s ease-in;
   }
 `;

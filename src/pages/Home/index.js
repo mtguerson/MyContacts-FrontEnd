@@ -88,7 +88,7 @@ export default function Home() {
       )}
 
       <Header
-        justifyContent={
+        $justifyContent={
           hasError
             ? 'flex-end'
             : (
@@ -144,7 +144,7 @@ export default function Home() {
           )}
 
           {filteredContacts.length > 0 && (
-          <ListHeader orderBy={orderBy}>
+          <ListHeader $orderBy={orderBy}>
             <button type="button" onClick={handleToggleOrderBy}>
               <span>Nome</span>
               <img src={arrow} alt="Arrow" />
