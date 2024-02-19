@@ -2,23 +2,27 @@ import HttpClient from './utils/HttpClient';
 
 class ContactsServices {
   constructor() {
-    this.HttpClient = new HttpClient('http://localhost:3001');
+    this.httpClient = new HttpClient('http://localhost:3001');
   }
 
   listContacts(orderBy = 'asc') {
-    return this.HttpClient.get(`/contacts?orderBy=${orderBy}`);
+    return this.httpClient.get(`/contacts?orderBy=${orderBy}`);
   }
 
   getContactById(id) {
-    return this.HttpClient.get(`contacts/${id}`);
+    return this.httpClient.get(`contacts/${id}`);
   }
 
   createContact(contact) {
-    return this.HttpClient.post('contacts', { body: contact });
+    return this.httpClient.post('contacts', { body: contact });
   }
 
   updateContact(id, contact) {
-    return this.HttpClient.put(`/contacts/${id}`, { body: contact });
+    return this.httpClient.put(`/contacts/${id}`, { body: contact });
+  }
+
+  deleteContact(id) {
+    return this.httpClient.delete(`/contacts/${id}`);
   }
 }
 
