@@ -13,7 +13,7 @@ export default function ReactPortal({ containerId, children }) {
   return ReactDom.createPortal(children, container);
 }
 
-ReactPortal.PropTypes = {
+ReactPortal.propTypes = {
   containerId: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
