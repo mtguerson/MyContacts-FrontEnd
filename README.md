@@ -1,3 +1,32 @@
+# MyContacts
+
+Welcome to the **MyContacts** web application repository! This application is developed with the aim of facilitating the management of your contacts. Using the React library, the application offers an interactive and friendly interface for creating, editing, and deleting contacts. Each contact can contain information such as name, phone, email, and category, allowing for simple and effective organization of your contact list.
+
+<img src="https://github.com/mtguerson/MyContacts-FrontEnd/assets/136662812/10977623-265f-469a-a6f1-25c24f0cb2b3" width="49%" />
+
+<img src="https://github.com/mtguerson/MyContacts-FrontEnd/assets/136662812/a4e93195-6d9f-4dd2-94f5-899a9232f0e5" width="49%" />
+
+<p align="center">
+  <img src="https://github.com/mtguerson/MyContacts-FrontEnd/assets/136662812/d0c3c2e4-68d5-45d3-a5c7-dcb6f5ad08a8" width="50%" />
+</p>
+
+
+
+
+## Features
+
+- **Contact Creation**: Add contacts to your list by filling in information such as name, phone, email, and category.
+- **Contact Editing**: Quickly and conveniently update your contacts' information.
+- **Contact Deletion**: Remove contacts that are no longer needed.
+- **Custom Categories**: Organize your contacts into categories for easier management.
+- **User-Friendly Interface**: Enjoy a clean and intuitive interface to manage your contacts.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building a dynamic and interactive user interface on a web page.
+- **CSS**: Used for styling the application, ensuring a pleasant visual experience.
+- **Webpack/Babel**: Tools for compiling modern JavaScript code and module bundles.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
