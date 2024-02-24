@@ -10,18 +10,18 @@ export default function useAnimatedUnmount(visible) {
       setShouldRender(true);
     }
 
-    function handleAnimatedEnd() {
+    function handleAnimatonEnd() {
       setShouldRender(false);
     }
 
     const elementRef = animatedElementRef.current;
-    if (!visible && animatedElementRef.current) {
-      elementRef.addEventListener('animationend', handleAnimatedEnd);
+    if (!visible && elementRef) {
+      elementRef.addEventListener('animationend', handleAnimatonEnd);
     }
 
     return () => {
       if (elementRef) {
-        elementRef.removeEventListener('animationend', handleAnimatedEnd);
+        elementRef.removeEventListener('animationend', handleAnimatonEnd);
       }
     };
   }, [visible]);
