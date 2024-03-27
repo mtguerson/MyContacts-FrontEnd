@@ -24,7 +24,7 @@ Welcome to the **MyContacts** web application repository! This application is de
 ## Technologies Used
 
 - **React**: A JavaScript library for building a dynamic and interactive user interface on a web page.
-- **CSS**: Used for styling the application, ensuring a pleasant visual experience.
+- **Styled-Components**: Used for styling the application, ensuring a pleasant visual experience.
 - **Webpack/Babel**: Tools for compiling modern JavaScript code and module bundles.
 
 # Getting Started with Create React App
